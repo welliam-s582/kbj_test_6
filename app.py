@@ -1,4 +1,10 @@
-print('Halo, kami dari kelompok 6, berikut adalah anggota kami:' \
-'1. Muh. Al Fathan'
-'2. Welliam Sastradipura'
-'3. Fariz Rohmansyah')
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Hello from Kelompok 6 running in Rancher CI/CD!"
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
