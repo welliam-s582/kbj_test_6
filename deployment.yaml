@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: kel6-app-test
-        image: docker.io/kel6-app-test/kel6-app-test:latest
+        image: docker.io/welliams582/kel6-app-test:latest
         ports:
         - containerPort: 5000
 ---
@@ -32,3 +32,4 @@ spec:
     port: 80
     targetPort: 5000
   type: LoadBalancer
+
